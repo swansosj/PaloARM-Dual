@@ -17,7 +17,8 @@ Azure Portal Wizard Template Deployment:
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/)
 
 Standard Custom Template Deployment:
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/)
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswansosj%2FPaloARM-Dual%2Fmain%2Fazuredeploy.json)
 
 ## Requirements-and-limitations
 
