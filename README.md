@@ -12,6 +12,13 @@ This template is for a HA Pair of Palo Alto with a floating Public IP on the Ext
 
 ### Azure Portal
 
+Azure Portal Wizard Template Deployment:
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/)
+
+Standard Custom Template Deployment:
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/)
+
 ## Requirements-and-limitations
 
 ## Configuration
