@@ -5,14 +5,26 @@
         "customerName": {
             "value": "## TO BE DEFINED ##"
         },
-        "environment": {
-            "value": "## TO BE DEFINED ##"
-        },
         "srcIPInboundNSG": {
             "value": "0.0.0.0/0"
         },
-        "virtualNetworkAddressPrefixes": {
+        "customData": {
+            "value": "echo customData"
+        },
+        "imageVersion": {
+            "value": "latest"
+        },
+        "vmSize": {
+            "value": "Standard_D3_v2"
+        },
+        "vnetNewOrExisting": {
+            "value": "new"
+        },
+        "virtualNetworkAddressPrefix": {
             "value": "10.0.0.0/16"
+        },
+        "virtualNetworkExistingRGName": {
+            "value": ""
         },
         "subnet0Prefix": {
             "value": "10.0.0.0/24"
@@ -23,14 +35,17 @@
         "subnet2Prefix": {
             "value": "10.0.2.0/24"
         },
-        "imageVersion": {
-            "value": "latest"
+        "subnet3Prefix": {
+            "value": "10.0.3.0/24"
         },
-        "imageSku": {
-            "value": "byol"
+        "subnet1StartAddress": {
+            "value": "10.0.1.4"
         },
-        "vmSize": {
-            "value": "Standard_F8s_v2"
+        "subnet2StartAddress": {
+            "value": "10.0.2.4"
+        },
+        "subnet3StartAddress": {
+            "value": "10.0.3.4"
         },
         "authenticationType": {
             "value": "password"
@@ -41,11 +56,29 @@
         "adminPasswordOrKey": {
             "value": "## TO BE DEFINED ##"
         },
-        "customData": {
-            "value": "echo customData"
+        "publicIPNewOrExisting": {
+            "value": "new"
+        },
+        "publicIPRGName": {
+            "value": "None"
+        },
+        "publicIPAllocationMethod": {
+            "value": "Dynamic"
         },
         "bootstrap": {
             "value": "no"
+        },
+        "zone": {
+            "value": "None"
+        },
+        "availabilitySetName": {
+            "value": "None"
+        },
+        "availabilitySetPlatformFaultDomainCount": {
+            "value": "2"
+        },
+        "availabilitySetPlatformUpdateDomainCount": {
+            "value": "5"
         }
     }
 }
