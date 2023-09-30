@@ -549,7 +549,7 @@
             "type": "Microsoft.Network/networkInterfaces",
             "apiVersion": "2017-10-01",
             "dependsOn": [
-                "[resourceId('Microsoft.Network/publicIPAddresses', variables('publicIPAddress2Name'))]",
+                "[resourceId('Microsoft.Network/publicIPAddresses', variables('publicIPAddress1Name'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]"
             ],
             "location": "[resourceGroup().location]",
@@ -560,7 +560,7 @@
                         "properties": {
                             "privateIPAllocationMethod": "Dynamic",
                             "publicIPAddress": {
-                                "id": "[if(equals(parameters('publicIPNewOrExisting'), 'existing'), resourceId(parameters('publicIPRGName'), 'Microsoft.Network/publicIPAddresses', variables('publicIPAddress2Name')), resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddress2Name')))]"
+                                "id": "[if(equals(parameters('publicIPNewOrExisting'), 'existing'), resourceId(parameters('publicIPRGName'), 'Microsoft.Network/publicIPAddresses', variables('publicIPAddress1Name')), resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddress1Name')))]"
                             },
                             "subnet": {
                                 "id": "[variables('subnet0Ref')]"
