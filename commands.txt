@@ -1,0 +1,29 @@
+
+
+configure\n
+
+set network virtual-router Azure\n
+
+set network interface ethernet ethernet1/1 link-state up\n
+set network interface ethernet ethernet1/1 layer3\n
+set network interface ethernet ethernet1/2 link-state up\n
+set network interface ethernet ethernet1/2 layer3\n
+set network interface ethernet ethernet1/3 link-state up\n
+
+set network virtual-router Azure interface ethernet1/1\n
+set network virtual-router Azure interface ethernet1/2\n
+set network virtual-router Azure interface ethernet1/3\n
+
+set network interface ethernet ethernet1/1 layer3 dhcp-client\n
+
+set network interface ethernet ethernet1/1 layer3 ip 10.0.1.5/24\n
+
+set zone Outside\n
+
+set zone Outside network layer3 ethernet1/1\n
+
+set network virtual-router Azure routing-table ip static-route default destination 0.0.0.0/0 interface ethernet1/1 nexthop ip-address 10.0.1.1\n
+
+
+
+commit\n
